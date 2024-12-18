@@ -15,9 +15,19 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin(origins = "*", allowedHeaders = "*", methods = { 
+    RequestMethod.GET, 
+    RequestMethod.POST, 
+    RequestMethod.PUT, 
+    RequestMethod.DELETE, 
+    RequestMethod.OPTIONS 
+})
+    
 @RestController
-@CrossOrigin(origins = "http://carmanagement-production-200c.up.railway.app")
+
 @RequestMapping("/api/v1/cars")
+
+
 public class CarController {
 
     @Autowired
