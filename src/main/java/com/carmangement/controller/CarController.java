@@ -16,7 +16,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
-@CrossOrigin(origins = "https://carmanagement-production-200c.up.railway.app")
+@CrossOrigin(origins = "http://carmanagement-production-200c.up.railway.app")
 @RequestMapping("/api/v1/cars")
 public class CarController {
 
