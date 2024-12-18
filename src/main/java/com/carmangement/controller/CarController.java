@@ -14,6 +14,7 @@ import com.carmangement.service.CarService;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "https://carmanagement-production-200c.up.railway.app")
 @RequestMapping("/api/v1/cars")
 public class CarController {
 
